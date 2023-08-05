@@ -1,19 +1,18 @@
 import random
 
-sheets = ["metal", "non_metal", "discogs"]
+sheets = ["metal", "non_metal", "essentials", "discogs"]
 
 items = { 
-    "metal" : 936,
-    "non_metal" : 183,
-    "discogs" : 104
+    "metal" : 759,
+    "non_metal" : 266,
+    "essentials": 59,
+    "discogs" : 95
 }
 
-
-index = random.randrange(0, 2)
+index = random.randrange(0, 3)
 sheet_index = items[sheets[index]]
-
-print(f"sheet: {sheets[index]}")
 
 row_number = random.randrange(0, sheet_index)
 
+print(f"sheet: {sheets[index]}")
 print(f"row number: {row_number}")
